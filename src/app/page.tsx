@@ -5,6 +5,7 @@ import LogisticsSolutions from '@/components/LogisticsSolutions';
 import Stats from '@/components/Stats';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Testimonials from '@/components/Testimonials';
+import ThreeClicksHero from '@/components/ThreeClicksHero';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Stats />
       <WhyChooseUs />
       <Testimonials />
+      <ThreeClicksHero />
     </main>
   );
 }
