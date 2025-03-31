@@ -6,6 +6,7 @@ import Stats from '@/components/Stats';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Testimonials from '@/components/Testimonials';
 import ThreeClicksHero from '@/components/ThreeClicksHero';
+import Gallery from '@/components/Gallery';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyChooseUs />
       <Testimonials />
       <ThreeClicksHero />
+      <Gallery />
     </main>
   );
 }

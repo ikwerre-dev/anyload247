@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 const ThreeClicksHero = () => {
-    const [trackingId, setTrackingId] = useState('');
+    // const [trackingId, setTrackingId] = useState('');
 
     return (
         <div className="relative py-[10rem] flex items-center">
@@ -31,7 +31,7 @@ const ThreeClicksHero = () => {
 
                     <p className="text-white/90 max-w-3xl mx-auto mb-12 text-lg">
                         With just three clicks, you can ship, track, and receive your packages effortlessly.
-                        Whether it's local dispatch, international deliveries, or warehousing, we deliver
+                        Whether it&apos;s local dispatch, international deliveries, or warehousing, we deliver
                         fast, secure, and cost-effective logistics solutions.
                     </p>
 

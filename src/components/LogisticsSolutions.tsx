@@ -42,7 +42,7 @@ const LogisticsSolutions = () => {
     ];
 
     return (
-        <div className="relative bg-[#037244] py-20">
+        <div className="relative bg-[#025432] py-20">
             <Image src="/bg.png" alt="Background Pattern" fill className="object-cover opacity-10" priority />
             
             <motion.div 
