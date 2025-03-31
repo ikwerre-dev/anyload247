@@ -3,6 +3,7 @@ import Banner from '@/components/Banner';
 import WhoWeAre from '@/components/WhoWeAre';
 import LogisticsSolutions from '@/components/LogisticsSolutions';
 import Stats from '@/components/Stats';
+import WhyChooseUs from '@/components/WhyChooseUs';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <WhoWeAre />
       <LogisticsSolutions />
       <Stats />
+      <WhyChooseUs />
      </main>
   );
 }
