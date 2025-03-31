@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Banner from '@/components/Banner';
 import WhoWeAre from '@/components/WhoWeAre';
+import LogisticsSolutions from '@/components/LogisticsSolutions';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Banner />
       <WhoWeAre />
+      <LogisticsSolutions />
      </main>
   );
 }
