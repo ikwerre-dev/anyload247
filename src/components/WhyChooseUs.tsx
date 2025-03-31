@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
                             </h2>
                             <p className="text-white/90 text-base">
                                 At Anyload247, we don&lsquo;t just move packages; we ensure a seamless, secure,
-                                and transparent shipping experience. Here's why we stand out:
+                                and transparent shipping experience. Here&lsquo;s why we stand out:
                             </p>
                         </motion.div>
 
