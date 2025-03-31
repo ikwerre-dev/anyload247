@@ -18,21 +18,21 @@ const Testimonials = () => {
             comment: "I love how simple and efficient the app is. Just a few clicks and my package is on the way. Customer support is also excellent!",
             author: "David Momah",
             position: "E-commerce Seller",
-            image: "/david.png"
+            image: "/james.png"
         },
         {
             rating: 4,
             comment: "Fast, secure, and affordable! I've used Anyload247 multiple times, and they never disappoint. Highly recommended!",
             author: "Sandra Okenkwo",
             position: "Logistics Manager",
-            image: "/sandra.png"
+            image: "/james.png"
         }
     ];
 
     return (
         <div className="bg-white py-20">
             <div className="container mx-auto px-6">
-                <motion.h2 
+                <motion.h2
                     className="text-4xl font-bold text-center mb-16"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -45,13 +45,15 @@ const Testimonials = () => {
                     {testimonials.map((testimonial, index) => (
                         <motion.div
                             key={testimonial.author}
-                            className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm"
+                            className="bg-white p-6 relative rounded-2xl border border-gray-800 shadow-sm"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.2 }}
                         >
-                            <div className="flex gap-1 mb-4">
+                           <div className="text-[7rem] absolute top-0 text-[#037244]">&ldquo;</div>
+                           <div className="flex items-center pt-[2rem] pb-5 justify-center">
+                           <div className="flex gap-1 mb-4">
                                 {[...Array(5)].map((_, i) => (
                                     <Star
                                         key={i}
@@ -59,7 +61,7 @@ const Testimonials = () => {
                                     />
                                 ))}
                             </div>
-                            <div className="text-[3rem] text-[#037244]">&ldquo;</div>
+                           </div>
                             <p className="text-gray-600 mb-6 text-sm">
                                 {testimonial.comment}
                             </p>
