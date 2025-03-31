@@ -48,7 +48,7 @@ const Stats = () => {
     }, [isInView]);
 
     return (
-        <div className="relative bg-white py-20">
+        <div className="relative bg-white py-[5rem]">
             <Image
                 src="/counter.png"
                 alt="Background Pattern"
@@ -59,7 +59,7 @@ const Stats = () => {
             
             <div className="container mx-auto px-6 relative z-10">
                 <div className="text-center mb-10">
-                    <h2 className="text-4xl font-semibold mb-4">
+                    <h2 className="text-4xl font-bold mb-4">
                         Excellent Company,<br />
                         Quality Service
                     </h2>
