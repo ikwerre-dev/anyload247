@@ -13,7 +13,7 @@ const Stats = () => {
 
     useEffect(() => {
         if (isInView) {
-            const duration = 2000; // 2 seconds
+            const duration = 2000; 
             const deliveredTarget = 950;
             const countryTarget = 850;
             const clientTarget = 550;

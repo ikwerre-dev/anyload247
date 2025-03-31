@@ -2,8 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
-
+ 
 const ThreeClicksHero = () => {
     // const [trackingId, setTrackingId] = useState('');
 
