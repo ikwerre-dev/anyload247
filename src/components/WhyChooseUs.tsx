@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
     ];
 
     return (
-        <div className="relative bg-[#037244] min-h-screen">
+        <div className="relative bg-[#037244]">
             <Image
                 src="/rider.png"
                 alt="Delivery Rider"
@@ -44,49 +44,56 @@ const WhyChooseUs = () => {
             <div className="absolute inset-0 bg-[#037244]/60" />
             
             <div className="container mx-auto px-6 py-20 relative z-10">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="max-w-2xl"
-                >
-                    <h3 className="text-white text-lg font-medium mb-4">Why Choose us?</h3>
-                    <h2 className="text-white text-4xl font-bold mb-6">
-                        Delivering Trust, Speed & Convenience – Every Mile, Every Time!
-                    </h2>
-                    <p className="text-white/90">
-                        At Anyload247, we don't just move packages; we ensure a seamless, secure, 
-                        and transparent shipping experience. Here's why we stand out:
-                    </p>
-                </motion.div>
+                <div className="grid md:grid-cols-2 gap-8">
+                    {/* Left section - empty */}
+                    <div></div>
 
-                <motion.div 
-                    className="mt-12 bg-white rounded-lg p-8"
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.2 }}
-                >
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-                        {features.map((feature, index) => (
-                            <motion.div
-                                key={feature.title}
-                                className="flex flex-col items-center text-center"
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: 0.1 * index }}
-                            >
-                                <div className="bg-[#037244] p-4 rounded-full mb-4">
-                                    <feature.icon className="w-6 h-6 text-white" />
-                                </div>
-                                <h3 className="text-[#464242] font-medium text-sm">
-                                    {feature.title}
-                                </h3>
-                            </motion.div>
-                        ))}
+                    {/* Right section - content */}
+                    <div>
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                        >
+                            <h3 className="text-white text-lg font-medium mb-4">Why Choose us?</h3>
+                            <h2 className="text-white text-4xl font-bold mb-6">
+                                Delivering Trust, Speed & Convenience – Every Mile, Every Time!
+                            </h2>
+                            <p className="text-white/90 text-sm">
+                                At Anyload247, we don't just move packages; we ensure a seamless, secure, 
+                                and transparent shipping experience. Here's why we stand out:
+                            </p>
+                        </motion.div>
+
+                        <motion.div 
+                            className="mt-12 bg-white rounded-2xl p-8"
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2 }}
+                        >
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+                                {features.map((feature, index) => (
+                                    <motion.div
+                                        key={feature.title}
+                                        className="flex flex-col items-center text-center"
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ delay: 0.1 * index }}
+                                    >
+                                        <div className="bg-[#037244] p-4 rounded-full mb-4">
+                                            <feature.icon className="w-6 h-6 text-white" />
+                                        </div>
+                                        <h3 className="text-[#464242] font-medium text-sm">
+                                            {feature.title}
+                                        </h3>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </motion.div>
                     </div>
-                </motion.div>
+                </div>
             </div>
         </div>
     );
