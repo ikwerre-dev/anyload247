@@ -59,7 +59,7 @@ const Testimonials = () => {
                                     />
                                 ))}
                             </div>
-                            <div className="text-2xl text-[#037244] mb-4">&ldquo;</div>
+                            <div className="text-[3rem] text-[#037244]">&ldquo;</div>
                             <p className="text-gray-600 mb-6 text-sm">
                                 {testimonial.comment}
                             </p>
