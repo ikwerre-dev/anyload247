@@ -5,7 +5,7 @@ const WhoWeAre = () => {
         <div className="bg-white pb-20">
             <div className="container mx-auto px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-start">
-                    <div>
+                    <div className="order-last md:order-first">
                         <div className="relative inline-block pt-[5rem]">
                             <h3 className="text-[#037244] text-xl font-medium">Who we are</h3>
                             <div className="absolute -bottom-2 left-0 w-1/2 h-[2px] bg-[#037244]"></div>
@@ -54,7 +54,7 @@ const WhoWeAre = () => {
                         </div>
                     </div>
 
-                    <div className="relative h-screen  ">
+                    <div className="relative h order-first md:order-last">
                         <Image
                             src="/container.png"
                             alt="Green Shipping Container"

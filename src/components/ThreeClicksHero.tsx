@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
- 
+
 const ThreeClicksHero = () => {
     // const [trackingId, setTrackingId] = useState('');
 
@@ -35,14 +35,14 @@ const ThreeClicksHero = () => {
                     </p>
 
                     <div className="flex flex-col md:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
-                        <button className="bg-[#04C977] text-white px-6 py-4 rounded-md hover:bg-[#04B870] text-xs font-medium uppercase tracking-wide whitespace-nowrap">
+                        <button className="w-full md:w-auto bg-[#04C977] text-white px-6 py-4 rounded-md hover:bg-[#04B870] text-xs font-medium uppercase tracking-wide whitespace-nowrap">
                             Click here to begin
                         </button>
-                        <div className="relative flex flex-1 max-w-[500px] bg-white rounded-md">
+                        <div className="relative flex flex-col w-full flex-1 bg-white rounded-md">
                             <input
                                 type="text"
                                 placeholder="INPUT TRACKING ID"
-                                className="w-full px-4 py-4 text-xs text-gray-600 focus:outline-none"
+                                className="w-full px-4 py-4 text-xs text-gray-600 focus:outline-none rounded-md"
                             />
                             <button className="absolute right-1 top-1 bottom-1 bg-[#04C977] text-white px-6 rounded-md hover:bg-[#04B870] text-xs font-medium uppercase tracking-wide">
                                 Track Delivery

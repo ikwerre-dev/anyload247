@@ -19,13 +19,13 @@ export const metadata = {
   description: 'Your trusted source for quality products',
   keywords: "ecommerce, online shopping, PWA, affiliate marketing",
   authors: [{ name: "Robinson Honour" }],
-  themeColor: "#184193",
+  themeColor: "#04C977",
 };
 
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#184193'
+  themeColor: '#04C977'
 };
 
 export default function RootLayout({

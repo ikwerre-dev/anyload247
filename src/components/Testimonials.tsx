@@ -31,7 +31,7 @@ const Testimonials = () => {
 
     return (
         <div className="bg-white py-20">
-            <div className="container mx-auto ">
+            <div className="container mx-auto  px-5 md:px-0">
                 <motion.h2
                     className="text-4xl font-semibold text-center mb-16"
                     initial={{ opacity: 0, y: 20 }}
